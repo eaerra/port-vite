@@ -1,3 +1,40 @@
 #header {
-    
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe57f;
+    padding: 0.3rem;
+}
+.header_logo {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.header_nav li {
+    display: inline;
+}
+.header_nav li a {
+    padding: 0 14px;
+    font-size: 0.8rem;
+    position: relative;
+}
+.header_nav li a::before {
+    content: '';
+    width: calc(100% - 28px);
+    height: 1px;
+    background-color: var(--black);
+    position: absolute;
+    left: 14px;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+.header_nav li a:hover::before {
+    transform: scaleX(1);
 }
