@@ -1,7 +1,223 @@
 #skill {
     width: 100%;
-    height: 450vh;
+    height: 350vh;
     overflow: hidden;
     position: relative;
     background: #1E90FF;
+}
+.skill_inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    cursor: url(../../img/needle.png), auto;
+}
+.skill_inner a {
+    cursor: url(../../img/needle.png), auto;
+}
+
+/* skill_item */
+.skill_item {
+    width: 25rem;
+    height: 25rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+}
+.skill_item.clicker {
+    background-color: #1E90FF;
+}
+.skill_item h2 {
+    font-size: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #fff;
+}
+.skill_item li {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.skill_item li a:hover {
+    font-weight: 900;
+}
+.skill_item p {
+    position: absolute;
+    bottom: 20px;
+}
+.skill_item.i1 {
+    position: absolute;
+    top: 11%;
+    left: 7%;
+}
+.skill_item.i2 {
+    position: absolute;
+    top: 21%;
+    right: 7%;
+}
+.skill_item.i3 {
+    position: absolute;
+    top: 33%;
+    left: 17%;
+}
+
+/* skill_text,cont */
+.text_cont {
+    width: 16rem;
+    height: 16rem;
+    background-color: #fffde7;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+.text_cont h2 {
+    font-size: 1.5rem;
+}
+.text_cont li {
+    font-size: 1rem;
+}
+.text_cont.c1 {
+    position: absolute;
+    top: 49%;
+    left: 55%;
+}
+.text_cont.c2 {
+    position: absolute;
+    top: 51%;
+    left: 10%;
+}
+.text_cont.c3 {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+.text_cont.c4 {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+}
+
+/* skill_img */
+.skill_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img_left {
+    width: 100%;
+    height: 100%;
+    background: url(../../img/skill_left.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: -40%;
+    opacity: 0.8;
+}
+.img_right {
+    width: 100%;
+    height: 100%;
+    background: url(../../img/skill_right.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: -47%;
+}
+
+/* skill_deco */
+.skill_deco {
+    width: 30rem;
+    height: 30rem;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+}
+.skill_deco.b1 {
+    position: absolute;
+    top: 10.5%;
+    left: 6.5%;
+    opacity: 0.5;
+}
+.skill_deco.b2 {
+    position: absolute;
+    top: 20.5%;
+    right: 6.5%;
+    opacity: 0.5;
+}
+.skill_deco.b3 {
+    position: absolute;
+    top: 32.5%;
+    left: 16.5%;
+    opacity: 0.5;
+}
+
+.skill_deco.b4 {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 5.5%;
+    left: 2.5%;
+}
+.skill_deco.b5 {
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 9%;
+    right: 6%;
+}
+.skill_deco.b6 {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 8.5%;
+    right: 5%;
+    background: #000;
+}
+.skill_deco.b7 {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 15%;
+    right: 7%;
+}
+
+.skill_deco.b8 {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 27%;
+    left: 3%;
+    background: #fff;
+}
+.skill_deco.b9 {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 18%;
+    left: 45%;
+    z-index: 100;
+}
+.skill_deco.b10 {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 38%;
+    right: 15%;
+    z-index: 100;
+}
+.skill_deco.b11 {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 35%;
+    right: 8%;
+    z-index: 100;
 }
