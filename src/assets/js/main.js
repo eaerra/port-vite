@@ -32,25 +32,25 @@ gsap.to("#portfolioTitle", {
 // 인트로 영역
 gsap.to(".deco_box1", {
     rotation: 360,
-    duration: 4,
+    duration: 3,
     ease: Linear.easeNone,
     repeat: -1,
 });
 gsap.to(".deco_box2", {
     rotation: 360,
-    duration: 6,
+    duration: 2,
     ease: Linear.easeNone,
     repeat: -1,
 });
 gsap.to(".deco_box4", {
     rotation: 360,
-    duration: 7,
+    duration: 3,
     ease: Linear.easeNone,
     repeat: -1,
 });
 gsap.to(".deco_box6", {
     rotation: 360,
-    duration: 7,
+    duration: 2,
     ease: Linear.easeNone,
     repeat: -1,
 });

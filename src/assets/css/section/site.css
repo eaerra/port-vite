@@ -20,7 +20,7 @@
 .site_item {
     width: 25rem;
     height: 25rem;
-    background-color: #fff;
+    background-color: #000080;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -28,29 +28,62 @@
     align-items: center;
     text-align: center;
     z-index: 100;
+    color: #000080;
+    position: relative;
 }
-.site_item.clicker {
-    background-color: #1E90FF;
+.site_link {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    padding: 8px 20px;
+    border-radius: 40%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.site_link::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent; /* 삼각형 모양 */
 }
 .site_item h2 {
-    font-size: 27px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 20px;
-    color: #fff;
-}
-.site_item li {
-    text-transform: uppercase;
     font-size: 18px;
-    font-weight: 400;
-    color: #fff;
+    font-weight: 900;
 }
-.site_item li a:hover {
+.site_item a {
+    font-size: 15px;
+    font-weight: 400;
+}
+.site_item a:hover {
     font-weight: 900;
 }
 .site_item p {
     position: absolute;
     bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+.site_item p:hover {
+    font-weight: 600;
+}
+.site_item.clicker {
+    background-size: cover; /* 이미지를 컨테이너 크기에 맞게 덮음 */
+    background-position: center center; /* 이미지를 중앙에 배치 */
+    background-repeat: no-repeat; /* 이미지를 반복하지 않음 */
+}
+.site_item.i1.clicker {
+    background-image: url(../../img/website.png);
+}
+.site_item.i2.clicker {
+    background-image: url(../../img/responsive.png);
+}
+.site_item.i3.clicker {
+    background-image: url(../../img/mega.jpg);
 }
 .site_item.i1 {
     position: absolute;
