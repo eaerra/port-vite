@@ -61,17 +61,17 @@ gsap.to(".deco_box9", {
     repeat: -1,
 });
 
-// 스킬 영역
+// 사이트 영역
 // item 터지는 효과
-const skillItems = document.querySelectorAll('.skill_item'); // 모든 .skill_item 요소를 선택
+const siteItems = document.querySelectorAll('.site_item'); // 모든 .site_item 요소를 선택
 
-skillItems.forEach(function(skillItem) {
-    skillItem.addEventListener('click', function() {
+siteItems.forEach(function(siteItem) {
+    siteItem.addEventListener('click', function() {
         // 클릭 시 'clicker' 추가
-        skillItem.classList.add('clicker');
+        siteItem.classList.add('clicker');
 
         // p태그 사라지기
-        const pTag = skillItem.querySelector('p');
+        const pTag = siteItem.querySelector('p');
          if(pTag){
             pTag.style.display = 'none';
          }
@@ -79,42 +79,42 @@ skillItems.forEach(function(skillItem) {
 });
 
 // 위아래로 계속 움직이는 효과
-gsap.to(".skill_deco.b4", {
+gsap.to(".site_deco.b4", {
     y: "10%",  // 10% 아래로 이동
     repeat: -1,  // 무한 반복
     yoyo: true,  // 애니메이션이 끝날 때 원래 위치로 돌아옴
     duration: 0.8,  // 1초 동안 애니메이션
     ease: "power1.inOut"  // 애니메이션 속도 설정 (시작과 끝이 부드럽게)
 });
-gsap.to(".skill_deco.b7", {
+gsap.to(".site_deco.b7", {
     y: "10%",  // 10% 아래로 이동
     repeat: -1,  // 무한 반복
     yoyo: true,  // 애니메이션이 끝날 때 원래 위치로 돌아옴
     duration: 1,  // 1초 동안 애니메이션
     ease: "power1.inOut"  // 애니메이션 속도 설정 (시작과 끝이 부드럽게)
 });
-gsap.to(".skill_deco.b8", {
+gsap.to(".site_deco.b8", {
     y: "10%",  // 10% 아래로 이동
     repeat: -1,  // 무한 반복
     yoyo: true,  // 애니메이션이 끝날 때 원래 위치로 돌아옴
     duration: 1,  // 1초 동안 애니메이션
     ease: "power1.inOut"  // 애니메이션 속도 설정 (시작과 끝이 부드럽게)
 });
-gsap.to(".skill_deco.b9", {
+gsap.to(".site_deco.b9", {
     y: "10%",  // 10% 아래로 이동
     repeat: -1,  // 무한 반복
     yoyo: true,  // 애니메이션이 끝날 때 원래 위치로 돌아옴
     duration: 1.7,  // 2초 동안 애니메이션
     ease: "power1.inOut"  // 애니메이션 속도 설정 (시작과 끝이 부드럽게)
 });
-gsap.to(".skill_deco.b10", {
+gsap.to(".site_deco.b10", {
     y: "10%",  // 10% 아래로 이동
     repeat: -1,  // 무한 반복
     yoyo: true,  // 애니메이션이 끝날 때 원래 위치로 돌아옴
     duration: 3,  // 3초 동안 애니메이션
     ease: "power1.inOut"  // 애니메이션 속도 설정 (시작과 끝이 부드럽게)
 });
-gsap.to(".skill_deco.b11", {
+gsap.to(".site_deco.b11", {
     y: "10%",  // 10% 아래로 이동
     repeat: -1,  // 무한 반복
     yoyo: true,  // 애니메이션이 끝날 때 원래 위치로 돌아옴
